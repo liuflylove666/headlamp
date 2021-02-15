@@ -45,7 +45,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts --max_old_space_size=2048 build",
+    "buildbaseurl": "cross-env PUBLIC_URL=./ react-scripts --max_old_space_size=768 && rimraf build/frontend/index.baseUrl.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint -c package.json --ext .js,.ts,.tsx src/ ../app/electron",
@@ -100,6 +101,7 @@
     "@types/js-yaml": "^3.12.4",
     "@typescript-eslint/eslint-plugin": "^4.14.2",
     "@typescript-eslint/parser": "^4.14.2",
+    "cross-env": "^7.0.3",
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-import": "^2.22.1",
@@ -107,6 +109,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "http-proxy-middleware": "^1.0.6",
-    "monaco-editor-webpack-plugin": "^2.1.0"
+    "monaco-editor-webpack-plugin": "^2.1.0",
+    "rimraf": "^3.0.2"
   }
 }

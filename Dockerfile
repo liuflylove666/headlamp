@@ -14,7 +14,7 @@ WORKDIR /headlamp
 
 RUN cd ./backend && go build -o ./server ./cmd/
 
-RUN cd ./frontend && npm install && npm run build
+RUN cd ./frontend && npm install && npm run buildbaseurl
 
 # Create a plugins folder if none exists so we copy whatever exists to the
 # image.
