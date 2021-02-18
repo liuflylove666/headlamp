@@ -10,13 +10,13 @@ function a11yProps(index: number) {
   };
 }
 
-export interface Tab {
+export interface TabItem {
   label: string;
   component: JSX.Element | JSX.Element[];
 }
 
 export interface TabsProps {
-  tabs: Tab[];
+  tabs: TabItem[];
   tabProps?: {
     [propName: string]: any;
   };
@@ -79,7 +79,7 @@ interface TabPanelProps extends TypographyProps {
 }
 
 export function TabPanel(props: TabPanelProps) {
-  const { children, tabIndex, index, ...other } = props;
+  const { children, tabIndex, index } = props;
 
   return (
     <Typography
