@@ -54,7 +54,7 @@ exports[`Storyshots Tabs Basic Tabs 1`] = `
         </button>
       </div>
       <span
-        class="PrivateTabIndicator-root-121 PrivateTabIndicator-colorPrimary-122 MuiTabs-indicator"
+        class="PrivateTabIndicator-root-126 PrivateTabIndicator-colorPrimary-127 MuiTabs-indicator"
         style="left: 0px; width: 0px;"
       />
     </div>
@@ -137,7 +137,7 @@ exports[`Storyshots Tabs Starting Tab 1`] = `
         </button>
       </div>
       <span
-        class="PrivateTabIndicator-root-125 PrivateTabIndicator-colorPrimary-126 MuiTabs-indicator"
+        class="PrivateTabIndicator-root-130 PrivateTabIndicator-colorPrimary-131 MuiTabs-indicator"
         style="left: 0px; width: 0px;"
       />
     </div>
